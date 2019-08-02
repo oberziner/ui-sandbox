@@ -1,0 +1,58 @@
+body {
+  background-color: hsl(217, 49%, 68%);
+  font-family: Roboto, sans-serif;
+}
+
+.options-box {
+  display: table;
+  background-color: hsl(0, 0%, 100%);
+  margin-top: 140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.option-pane {
+  text-align: center;
+  display: inline-block;
+  vertical-align:top;
+  width: 200px;
+  height: 250px;
+  border-radius: 3%;
+  margin: 10px;
+  padding: 10px;
+}
+
+.option-pane:hover {
+  background-color: hsl(0, 0%, 93%);
+}
+
+.description-label {
+  height: 90px;
+  font-size: 1em;
+  color: hsl(227, 5%, 57%);
+}
+
+.option-pane h2 {
+  text-transform: uppercase;
+  font-size: 1.1em;
+  color: hsl(227, 62%, 64%);
+}
+
+.option-pane img {
+  display: block;
+  margin: auto;
+}
+
+.price-label {
+  font-size: 1.6em;
+  color: hsl(227, 62%, 64%);
+}
+
+.price-label:first-letter {
+  font-size: 0.1em;
+  vertical-align: top;
+}
+
+.small-text {
+  font-size: 0.6em;
+}
