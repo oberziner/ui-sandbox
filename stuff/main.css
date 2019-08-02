@@ -1,0 +1,44 @@
+body {
+  background-color: rgb(83, 66, 146);
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  position: absolute;
+}
+
+.box:hover {
+  background-color: #123456;
+  
+}
+
+.box1 {
+  background-color: yellow;
+  top: 100px;
+  left: 100px;
+}
+.box2 {
+  background-color: green;
+  top: 50px;
+  left: 200px;
+}
+.box3 {
+  background-color: red;
+  top: 150px;
+  left: 200px;
+}
+
+
+
+.login-box {
+  background-color: #fff;
+  width: 100px;
+  height: 100px;
+  margin-top: 10vh;
+  border-radius: 50px;
+  background-image: conic-gradient(white 40%, red 0);
+
+}
+
