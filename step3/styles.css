@@ -1,0 +1,71 @@
+body {
+  background-color: #15a085;
+  font-family: Roboto, sans-serif;
+}
+
+.main {
+  width: 600px;
+  height: 465px;
+  margin: 100px auto;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 48px 68px;  
+  border-radius: 3px;
+  background-image: url('img/bicycle.png');
+  background-size: 600px;
+  background-position: center 180px;
+  background-repeat: no-repeat;
+  box-shadow: 5px 0 10px hsl(0, 0%, 40%);
+}
+
+.title {
+  display: inline-block;
+  margin: 0 0 5px 0;
+  font-size: 1.4em;
+}
+
+.icon {
+  float: right;
+  margin: -5px 5px;
+  padding: 8px;    
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  transition: box-shadow 0.3s;
+}
+
+.icon:hover {
+  box-shadow: 0 0 0 4px #eee;
+
+}
+
+.text {
+  color: #BBB;
+  font-size: 0.9em;
+  font-weight: 300;
+}
+
+.item-table {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.item-row {
+  line-height: 45px;
+}
+
+.item-description {
+  color: #555;
+}
+
+.item-price {
+  font-weight: 500;
+  font-size: 1.25em;
+  text-align: right;
+}
+
+.total-text {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #666;
+}
