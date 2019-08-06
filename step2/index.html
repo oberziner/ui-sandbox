@@ -16,17 +16,26 @@
         <div class="dot"></div>
         <h1 class="title">payment method</h1>
       </li>
-      <li class="item with-hover">
-        <img class="icon" src="img/visa.svg">Visa
-      </li>
-      <li class="item with-hover selected-item">
-        <img class="icon" src="img/mastercard.svg"/>mastercard
-      </li>
-      <li class="item with-hover">
-        <img class="icon" src="img/maestro.svg"/>maestro
-      </li>
-      <li class="item btn">
-        <button class="btn-next">next step<img class="arrow" src="img/arrow.svg"></button>
+      <input id="visa" name="oi" type="radio"/>
+      <label for="visa">
+        <li class="item option">
+          <img class="icon" src="img/visa.svg">Visa
+        </li>
+      </label>
+      <input id="master" name="oi" type="radio"/>
+      <label for="master">
+        <li class="item option selected-item">
+          <img class="icon" src="img/mastercard.svg"/>mastercard
+        </li>
+      </label>
+      <input id="maestro" name="oi" type="radio"/>
+      <label for="maestro">
+        <li class="item option">
+          <img class="icon" src="img/maestro.svg"/>maestro
+        </li>
+      </label>
+      <li class="item btn-container">
+        <button class="next-button">next step<img class="arrow" src="img/arrow.svg"></button>
       </li>
     </ul>
 </body>
