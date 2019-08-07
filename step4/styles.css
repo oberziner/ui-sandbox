@@ -11,7 +11,7 @@ body {
 .chat-box {
   width: 400px;
   background-color: #fff;
-  margin: 36px 38px;
+  margin: 36px auto;
 }
 
 .chat-title {
@@ -32,6 +32,11 @@ body {
   position: absolute;
   top: 31%;
   right: 18px;
+  filter: brightness(0.9);
+}
+
+.close-icon:hover {
+  filter: brightness(1);
 }
 
 .message-list {
@@ -62,7 +67,7 @@ body {
 }
 
 .message-box {
-  margin: 10px 0;
+  margin: 15px 0;
   clear: both;
 }
 
@@ -141,18 +146,15 @@ body {
 .message-input-box input {
   line-height: 3em;
   font-size: 0.9em;
-  width: 80%;
+  width: 88%;
   border: none;
+  outline: none;
 }
 
-.message-input-box button {
-  width: 18%;
-  height: 2em;
-  border: none;
+.send-link {
   text-transform: uppercase;
-  text-align: right;
   color: #6f96d8;
   font-weight: 700;
   font-size: 0.9em;
-  outline: none;
+  text-decoration: none;
 }
