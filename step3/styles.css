@@ -4,6 +4,7 @@ body {
 }
 
 .main {
+  display: block; /*Fix for IE*/
   width: 600px;
   height: 465px;
   margin: 100px auto;
