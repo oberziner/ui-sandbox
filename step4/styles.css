@@ -1,23 +1,19 @@
 html {
   height: 100%;
-}
-
-body {
   background: linear-gradient(#cfdde7, #83a1bb);
-  background-size: 100% 100%;
   font-family: Roboto, sans-serif;
 }
 
 .chat-box {
   width: 400px;
   background-color: #fff;
-  margin: 36px auto;
+  margin: 35px auto;
 }
 
 .chat-title {
-  background-color: #6a96d8;
   position: relative;
   padding: 8px 30px 6px 30px;
+  background-color: #6a96d8;
   color: #fff;
   text-transform: uppercase;
   font-size: 0.9em;
@@ -30,7 +26,7 @@ body {
 
 .close-icon {
   position: absolute;
-  top: 31%;
+  top: 20px;
   right: 18px;
   filter: brightness(0.9);
 }
@@ -40,7 +36,7 @@ body {
 }
 
 .message-list {
-  padding: 21px
+  padding: 21px;
 }
 
 .message-list::after {
@@ -50,18 +46,18 @@ body {
 }
 
 .date-bar {
+  margin: 5px 0;
   text-align: center;
   color: #bbb;
   text-transform: uppercase;
   font-size: 0.75em;
-  margin: 5px 0;
 }
 
 .date-bar::before,
 .date-bar::after {
   content: '';
   display: inline-block;
-  width: 34%;
+  width: 35%;
   margin: 4px 15px;
   border-top: 1px solid #ddd;
 }
@@ -72,8 +68,8 @@ body {
 }
 
 .message-box .time {
-  font-size: 0.7em;
   margin: 10px 0;
+  font-size: 0.7em;
   color: #aaa;
 }
 
@@ -87,23 +83,26 @@ body {
 }
 
 .message-mine .message {
-  background-color: #e6edf6;
   border-radius: 0px 5px 5px 5px;
+  background-color: #e6edf6;
 }
 
 .message-mine .message::before {
   content: '';
   display: block;
   position: absolute;
-  width: 0px;
   left: -5px;
   top: -5px;
-  height: 0px;
-  border-top: 5px solid transparent;
-  border-left: 5px solid transparent;
+  border: 5px solid transparent;
   border-right: 5px solid #e6edf6;
-  border-bottom: 5px solid transparent;
   transform: rotate(135deg);
+}
+
+.message-other .time, 
+.message-other .message,
+.message-blocked .message {
+  float: right;
+  clear: both;
 }
 
 .message-other .message{
@@ -111,18 +110,10 @@ body {
   border-radius: 5px 0px 5px 5px;
 }
 
-.message-other .time, 
-.message-other .message {
-  float: right;
-  clear: both;
-}
-
 .message-other .message::after {
   content: '';
   display: block;
   position: absolute;
-  width: 0px;
-  height: 0px;
   right: -5px;
   top: -5px;
   border: 5px solid transparent;
@@ -132,8 +123,6 @@ body {
 
 .message-blocked .message {
   background-color: #ffc2c1;
-  float: right;
-  clear: both;
   border-radius: 5px 5px 5px 5px;
 }
 
@@ -144,11 +133,11 @@ body {
 }
 
 .message-input-box input {
-  line-height: 3em;
-  font-size: 0.9em;
   width: 88%;
   border: none;
   outline: none;
+  line-height: 3em;
+  font-size: 0.9em;
 }
 
 .send-link {
