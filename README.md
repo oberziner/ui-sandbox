@@ -10,3 +10,7 @@ Random web pages to practice HTML/CSS/JS
 [Frontloops Loop 1 Step 3](https://oberziner.github.io/ui-sandbox/step3/index.html) - [Source](https://github.com/oberziner/ui-sandbox/tree/master/step3)
 
 [Frontloops Loop 1 Step 4](https://oberziner.github.io/ui-sandbox/step4/index.html) - [Source](https://github.com/oberziner/ui-sandbox/tree/master/step4)
+
+[Frontloops Loop 1 Step 5](https://oberziner.github.io/ui-sandbox/step5/index.html) - [Source](https://github.com/oberziner/ui-sandbox/tree/master/step5)
+
+[Frontloops Loop 1 Step 6](https://oberziner.github.io/ui-sandbox/step6/index.html) - [Source](https://github.com/oberziner/ui-sandbox/tree/master/step6)
