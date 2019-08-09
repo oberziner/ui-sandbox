@@ -1,17 +1,12 @@
-/* orange: #f2ce97 */
-/* dark: #484955 */
-/* orange underline: #e37b61 */
-
 body {
   background-color: #f2ce97;
   font-family: Roboto, sans-serif;
-  font-size: 1em;
 }
 
 .wrapper {
   max-width: 1000px;
   box-sizing: border-box;
-  margin: 78px auto;
+  margin: 80px auto;
   display: table;
   background-color: #fff;
 }
@@ -20,40 +15,53 @@ body {
   display: table-cell;
   position: relative;
   box-sizing: border-box;
-  background-color: #484955;
   width: 400px;
-  color: #fff;
   padding: 41px 40px 0 40px;
+  background-color: #484955;
+  color: #fff;
 }
 
 .title-container h1, h2 {
-  margin: 5px 0;
+  margin: 0;
+  font-size: 1.9em;
 }
 
+.title-container h1 {
+  font-weight: 500;
+
+}
 .title-container h2 {
   font-weight: 300;
-  font-size: 2em;
+}
+
+.title-container h2::after {
+  content: '';
+  display: block;
+  position: relative;
+  top: 15px;
+  width: 60px;
+  height: 4px;
+  background-color: #e37b61;
 }
 
 .author-box {
   position: absolute;
-  bottom: 30px;
+  bottom: 40px;
+  font-size: 1.1em;
+  font-weight: 300;
 }
 
 .author-box img {
-  border-radius: 50%;
-  width: 70px;
-  vertical-align: middle;
+  width: 65px;
   margin-right: 10px;
-}
-
-.content-container {
-  display: table-cell;
+  vertical-align: middle;
+  border-radius: 50%;
+  box-shadow: 0px 10px 25px -5px black;
 }
 
 .content {
   padding: 41px 40px 0 40px;
-  font-size: 1.3em;
+  font-size: 1.25em;
   font-weight: 300;
   line-height: 1.5em;
 }
@@ -65,10 +73,8 @@ body {
 
 footer {
   padding: 35px 40px;
-  /* box-shadow: 10px -10px 10px #ddd; */
-  /* box-shadow: inset hoff voff blur color; */
-  margin-top: 30px;
-  border-top: 1px solid #eee;
+  margin-top: 25px;
+  box-shadow: 0px -5px 15px -5px #ddd;
 }
 
 .date {
@@ -79,25 +85,27 @@ footer {
   font-weight: bold;
 }
 
+.more-button,
+.comment-count {
+  float: right;
+  color: #bbb;
+}
+
 .comment-count::before,
-.comment-count::after {
+.more-button::after {
   content: '';
   width: 25px;
   height: 25px;
   vertical-align: middle;
-  margin: 0 10px;
   display: inline-block;
 }
 
 .comment-count::before {
   background: url('img/comment.svg');
+  margin-right: 10px;
 }
 
-.comment-count::after {
+.more-button::after {
   background: url('img/more.svg');
-}
-
-.comment-count {
-  float: right;
-  color: #bbb;
+  margin-left: 25px;
 }
