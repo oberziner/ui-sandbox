@@ -1,0 +1,122 @@
+body {
+  background-color: #f8ebe9;
+  font-family: Roboto, sans-serif;
+}
+
+a {
+  margin: 0 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+  opacity: 0.4;
+  font-weight: 500;
+  font-size: 0.75em;
+  transition: opacity 0.5s;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+.wrapper {
+  background-color: #fff;
+  max-width: 1000px;
+  height: 646px;
+  margin: 31px auto;
+  background-image: url('img/background.jpg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: left -3px center;
+  box-shadow: 10px 50px 40px -20px rgb(178, 133, 126);
+}
+
+nav {
+  padding: 30px;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.main-container {
+  padding: 30px 30px 30px 450px;
+}
+
+.main-content {
+  padding-top: 10px;
+  display: table;
+}
+
+.left-column {
+  display: table-cell;
+}
+
+.right-column {
+  display: table-cell;
+  vertical-align: top;
+  padding: 0 30px 0 20px;
+}
+
+h1, h4 {
+  font-family: 'Playfair Display';
+}
+
+h1 {
+  font-size: 3.8em;
+  font-weight: 100;
+}
+
+.bar{
+  letter-spacing: -0.2em;
+}
+
+.preview {
+  width: 170px;
+}
+
+.preview-container {
+  position: relative;
+  display: block;
+  float: left;
+  margin-right: 40px;
+  margin-bottom: 10px;
+}
+
+.preview-play {
+  position: absolute;
+  top: 27%;
+  left: 40%;
+  box-sizing: border-box;
+  width: 50px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.view-all-link {
+  clear: both;
+  float: left;
+  margin: 0;
+  opacity: 1;
+}
+
+p {
+  line-height: 1.7em;
+  font-weight: 300;
+  margin: 0;
+}
+
+.left-arrow::before {
+  content: '';
+  display: block;
+  float: left;
+  background-image: url('img/arrow-back.svg');
+  background-size: 100% 100%;
+  height: 13px;
+  width: 13px;
+  margin-right: 3px;
+}
