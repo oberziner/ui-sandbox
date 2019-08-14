@@ -1,0 +1,152 @@
+body {
+  background-color: #f7cd75;
+  font-family: Roboto, sans-serif;
+}
+
+.wrapper {
+  margin: 100px auto;
+  width: 800px;
+  height: 450px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.left {
+  float: left;
+  width: 300px;
+  height: 100%;
+  overflow: scroll;
+  background-color: #eee;
+}
+
+.title,
+.total-balance {
+  display: inline-block;
+  margin: 40px 40px 25px 40px;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 1.25em;
+}
+
+.add-wallet {
+  float: right;
+  margin: 40px;
+}
+
+.cards-list {
+  list-style: none;
+  padding: 0;
+}
+
+.card-item {
+  box-sizing: border-box;
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #777;
+}
+
+.card-item:hover {
+  box-shadow: 0 0 0px 2px #949ecb;
+}
+
+.card-expiration {
+  margin-top: 5px;
+  font-size: 0.85em;
+}
+
+.card-item img {
+  display: block;
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.card-item span {
+  display: block;
+}
+
+.right {
+  height: 100%;
+  overflow: scroll;
+}
+
+.total-balance {
+  display: inline-block;
+  float: right;
+}
+
+.balance-list {
+  list-style: none;
+  margin: 15px 40px;
+  border-top: 1px solid #ddd;
+  padding: 0;
+}
+
+.balance-item {
+  margin: 35px 0;
+}
+
+.balance-negative > .price {
+  color: #8d9cc9;
+}
+
+.balance-positive > .price {
+  color: #90d067;
+}
+
+.balance-item::before {
+  content: '';
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin-right: 25px;
+  padding: 2px;
+  background-size: 75% 75%;
+  background-position: center center;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  vertical-align: middle;
+}
+
+.balance-negative::before {
+  background-image: url('img/minus.svg');
+}
+
+.balance-positive::before {
+  background-image: url('img/plus.svg');
+}
+
+.description-container {
+  display: inline-block;
+  width: 62%;
+  vertical-align: middle;
+}
+
+.balance-item-name {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.balance-item-details {
+  font-size: 0.8em;
+  color: #bbb;
+}
+
+.price {
+  width: 25%;
+  display: inline-block;
+  text-align: right;
+  font-weight: 700;
+}
+
+.cents {
+  vertical-align: super;
+  font-size: 0.7em;
+}
