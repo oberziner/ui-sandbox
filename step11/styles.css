@@ -1,0 +1,137 @@
+/* bg #de8a89 
+ * timer #3e3c3d
+ * temperature #353334
+ * load #353334
+ * fabrics #ecb9b8
+ * start #131313
+ * next/prev #ecb9b8
+ *
+ * */
+
+body {
+  margin: 0;
+  background-color: #de8a89;
+  font-family: Roboto, sans-serif;
+}
+
+.wrapper {
+  width: 900px;
+  margin: 75px auto;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fabric-list {
+  font-size: 3.8em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ecb9b8;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-right: calc((900px - 100vw ) / 2);
+}
+
+.fabric-item {
+  display: inline-block;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.fabric-item:hover {
+  color: #f2cfcf;
+}
+
+.fabric-item-selected {
+  color: #fff;
+}
+
+.load-desc {
+  color: #fff;
+  width: 650px;
+  
+}
+
+.instructions-list {
+  padding-top: 40px;
+  position: relative;
+}
+
+.instructions-list::before,
+.instructions-list::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 80px;
+  border: 7px solid black;
+  box-shadow: 0px 0px 0px 40px #ecb9b8;
+  background-color: #ecb9b8;
+  background-image: url('img/');
+}
+
+.instructions-list::before:hover,
+.instructions-list::after:hover {
+  background-color: #f2cfcf;
+}
+
+.instructions-list::before{
+  left: -54px;
+  border-color: transparent black transparent transparent;
+}
+.instructions-list::after {
+  right: -54px;
+  border-color: transparent transparent transparent black;
+}
+
+.instruction-item {
+  box-sizing: border-box;
+  width: 300px;
+  height: 300px;
+  padding: 120px 60px;
+  float: left;
+  background-color: #fff;
+  color: #fff;
+}
+
+.instruction-item-title {
+  display: block;
+  font-size: 1.25em;
+  color: #c38681;
+}
+
+.instruction-item-value {
+  display: block;
+  margin: 10px 0;
+  font-size: 1.9em;
+  font-weight: 500;
+}
+
+.dark-1 {
+  background-color: #3e3c3d;
+}
+
+.dark-2 {
+  background-color: #353334;
+}
+
+.dark-3 {
+  background-color: #201e1f;
+}
+
+.start-button {
+  margin: 0 25px;
+  width: 250px;
+  height: 60px;
+  position: relative;
+  top: -30px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
