@@ -12,6 +12,7 @@ body {
   margin: 100px auto;
   width: 300px;
   background-color: #ad7bd4;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
 }
 
 .fancy, 
@@ -21,7 +22,7 @@ body {
 
 .fancy {
   position: relative;
-  padding: 40px 55px 20px 55px;
+  padding: 0px;
   font-size: 15px;
 }
 
@@ -32,49 +33,62 @@ body {
   top: 0;
   left: 31px;
   width: 2px;
-  height: 40px;
+  height: 45px;
   background-color: #fff;
 }
 
 .fancy > li {
+  box-sizing: border-box;
   position: relative;
   color: #fff;
   font-weight: 500;
-  padding: 0px;
-  border: 1px yellow;
 }
 
 .fancy > .closed:before {
   content: '';
   display: block;
   position: absolute;
-  top: -25px;
-  left: -24px;
+  top: 0px;
+  left: 31px;
   width: 2px;
-  height: 63px;
+  height: 100%;
   background-color: #fff;
 }
 
-.fancy > li:after {
+.icon {
+  box-sizing: border-box;
+  padding: 22px 55px;
+  box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.icon:first-child {
+  padding-top: 44px;
+}
+
+.icon:after {
   content: '';
   display: block;
   position: absolute;
-  top: -1px;
-  left: -35px;
+  top: 30%;
+  left: 20px;
   width: 24px;
   height: 24px;
   border-radius: 50%;
   background-color: #fff;
   background-size: 60% 60%;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: 50% 40%;
 }
 
-.photo-icon:after {
+.icon:first-child::after {
+  top: 45%;
+}
+
+.icon.photo-icon:after {
   background-image: url('img/photo.svg');
 }
 
-.folder-icon:after {
+.icon.folder-icon:after {
   background-image: url('img/folder.svg');
 }
 
@@ -102,7 +116,7 @@ body {
 }
 
 .fancy > li > ul {
-  margin: 25px -55px;
+  margin: 0px 0px;
   padding: 20px 55px;
   background-color: #5f5280;
 }
