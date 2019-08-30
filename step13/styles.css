@@ -22,10 +22,11 @@ body {
 
 .fancy {
   position: relative;
-  padding: 0px;
+  padding: 22px 0 0 0;
   font-size: 15px;
 }
 
+/* top white vertical bar */
 .fancy:before {
   content: '';
   display: block;
@@ -55,47 +56,13 @@ body {
   background-color: #fff;
 }
 
-.icon {
-  box-sizing: border-box;
-  padding: 22px 55px;
-  box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
-}
-
-.icon:first-child {
-  padding-top: 44px;
-}
-
-.icon:after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 30%;
-  left: 20px;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background-color: #fff;
-  background-size: 60% 60%;
-  background-repeat: no-repeat;
-  background-position: 50% 40%;
-}
-
-.icon:first-child::after {
-  top: 45%;
-}
-
-.icon.photo-icon:after {
-  background-image: url('img/photo.svg');
-}
-
-.icon.folder-icon:after {
-  background-image: url('img/folder.svg');
-}
-
 .fancy > li > ul {
   position: relative;
+  padding: 20px 55px;
+  background-color: #5f5280;
 }
 
+/* vertical bars at top and bottom of inner ul */
 .fancy > li > ul:before,
 .fancy > li > ul:after {
   content: '';
@@ -115,18 +82,17 @@ body {
   bottom: 0;
 }
 
-.fancy > li > ul {
-  margin: 0px 0px;
-  padding: 20px 55px;
-  background-color: #5f5280;
-}
-
 .fancy > li > ul > li{
   position: relative;
   color: #d6d7de;
   padding: 10px 0;
 }
 
+.fancy > li > ul > li:hover{
+  color: #fff;
+}
+
+/* bigger bullet for inner li */
 .fancy > li > ul > li:before {
   content: '';
   display: block;
@@ -139,6 +105,7 @@ body {
   background-color: #fff;
 }
 
+/* vertical bar before inner li */
 .fancy > li > ul > li:after {
   content: '';
   display: block;
@@ -146,6 +113,46 @@ body {
   top: -8px;
   left: -24px;
   width: 2px;
-  height: 14px;
+  height: 16px;
   background-color: #aaa;
 }
+
+.icon {
+  position: relative;
+  box-sizing: border-box;
+  padding: 22px 20px 22px 55px;
+  box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.icon:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 30%;
+  left: 20px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #fff;
+  background-size: 60% 60%;
+  background-repeat: no-repeat;
+  background-position: 50% 40%;
+}
+
+.icon.photo-icon:after {
+  background-image: url('img/photo.svg');
+}
+
+.icon.folder-icon:after {
+  background-image: url('img/folder.svg');
+}
+
+.arrow-down-icon {
+  display: block;
+  margin-top: -4px;
+  float: right;
+  width: 24px;
+  height: 24px;
+  background-image: url('img/arrow.svg');
+}
+
