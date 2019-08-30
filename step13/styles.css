@@ -15,8 +15,7 @@ body {
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
 }
 
-.fancy, 
-.fancy ul {
+.fancy {
   list-style: none;
 }
 
@@ -56,15 +55,19 @@ body {
   background-color: #fff;
 }
 
-.fancy > li > ul {
+.list-vert-bars {
+  list-style: none;
+}
+
+.list-vert-bars {
   position: relative;
   padding: 20px 55px;
   background-color: #5f5280;
 }
 
 /* vertical bars at top and bottom of inner ul */
-.fancy > li > ul:before,
-.fancy > li > ul:after {
+.list-vert-bars:before,
+.list-vert-bars:after {
   content: '';
   display: block;
   position: absolute;
@@ -74,26 +77,26 @@ body {
   background-color: #aaa;
 }
 
-.fancy > li > ul:before {
+.list-vert-bars:before {
   top: 0;
 }
 
-.fancy > li > ul:after {
+.list-vert-bars:after {
   bottom: 0;
 }
 
-.fancy > li > ul > li{
+.list-vert-bars > li{
   position: relative;
   color: #d6d7de;
   padding: 10px 0;
 }
 
-.fancy > li > ul > li:hover{
+.list-vert-bars > li:hover{
   color: #fff;
 }
 
 /* bigger bullet for inner li */
-.fancy > li > ul > li:before {
+.list-vert-bars > li:before {
   content: '';
   display: block;
   position: absolute;
@@ -106,7 +109,7 @@ body {
 }
 
 /* vertical bar before inner li */
-.fancy > li > ul > li:after {
+.list-vert-bars > li:after {
   content: '';
   display: block;
   position: absolute;
