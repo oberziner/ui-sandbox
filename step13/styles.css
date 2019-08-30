@@ -4,10 +4,6 @@ body {
   font-family: Roboto, sans-serif;
 }
 
-* {
-  cursor: default;
-}
-
 .wrapper {
   margin: 100px auto;
   width: 300px;
@@ -93,6 +89,7 @@ body {
 
 .list-vert-bars > li:hover{
   color: #fff;
+  cursor: pointer;
 }
 
 /* bigger bullet for inner li */
