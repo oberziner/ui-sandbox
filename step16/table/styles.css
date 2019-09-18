@@ -1,0 +1,97 @@
+body {
+  background-color: #78abcc;
+  font-family: Roboto, sans-serif;
+}
+
+.wrapper {
+  background-color: #fff;
+  width: 400px;
+  margin: 150px auto;
+}
+
+.header {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  color: #9099a2;
+}
+
+.month-year {
+  float: right;
+}
+
+.calendar {
+  font-size: 0.9em;
+  padding: 5px 20px;
+}
+
+.calendar td {
+  text-align: center;
+  vertical-align: middle;
+
+  height: 2em;
+  min-width: 2em;
+  /* height: 30px; */
+  /* width: 30px; */
+  /* display: inline-block; */
+  /* background-color: #333fff; */
+  border-radius: 50%;
+  padding: 0.3em;
+  /* border: 7px solid white; */
+
+}
+
+.wawa {
+  background-color: #de6e45;
+  
+  color: #fff;
+}
+
+.cal-header {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #9099a2;
+  font-size: 0.9em;
+}
+
+.selected,
+.circled {
+  position: relative;
+  z-index: 1;
+  padding: 0px;
+}
+
+.selected {
+  color: #fff;
+}
+
+.selected:before,
+.circled:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0.0em;
+  left: 0.0em;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.selected:before {
+  background-color: #de6e45;
+}
+
+.circled:before {
+  border: 2px solid blue;
+  
+}
+
+.other-month {
+  color: #ddd;
+
+}
+
+
+5274486
+anqwgkxF
+jmoo6W7Q
