@@ -15,7 +15,8 @@ body {
   padding: 20px;
   padding-top: 19px;
   border-bottom: 1px solid #ddd;
-  color: #9099a2;
+  color: #7d8994;
+  font-weight: 500;
 }
 
 .fl-right {
@@ -52,10 +53,10 @@ body {
 }
 
 .cal-header {
-  font-weight: 600;
+  font-weight: 900;
   text-transform: uppercase;
-  color: #9099a2;
-  font-size: 0.9em;
+  color: #7d8994;
+  font-size: 13px;
 }
 
 .selected {
@@ -68,22 +69,37 @@ body {
 .circled {
   position: relative;
   border-radius: 50%;
+}
+
+.circled-purple {
+  box-shadow: 0px 0px 0px 2px #ae5989;
+}
+
+.circled-orange {
   box-shadow: 0px 0px 0px 2px #de6d46;
 }
 
-.circle-tooltip {
+.badge {
   line-height: 15px;
   position: absolute;
   display: block;
   top: -5px;
   right: -5px;
-  background-color: #de6d46;
   border-radius: 50%;
   width: 16px;
   height: 16px;
   color: #fff;
   font-size: 10px;
 }
+
+.badge-purple {
+  background-color: #ae5989;
+}
+
+.badge-orange {
+  background-color: #de6d46;
+}
+
 
 .other-month {
   color: #ddd;
@@ -127,6 +143,7 @@ body {
   height: 35px;
   text-align: center;
   border: 2px solid green;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: #fff;
 }
