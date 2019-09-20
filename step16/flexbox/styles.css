@@ -1,0 +1,121 @@
+body {
+  background-color: #78abcc;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+}
+
+.wrapper {
+  background-color: #fff;
+  width: 400px;
+  margin: 150px auto;
+}
+
+.header {
+  padding: 20px;
+  padding-top: 19px;
+  border-bottom: 1px solid #ddd;
+  color: #7d8994;
+  font-weight: 500;
+}
+
+.fl-right {
+  float: right;
+}
+
+.calendar {
+  font-size: 0.9em;
+  padding: 5px 30px 20px 30px;
+}
+
+.cal-header,
+.cal-row {
+  margin: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cal-header {
+  color: #7d8994;
+  font-weight: 900;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.cal-item {
+  box-sizing: border-box;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2em;
+  padding-top: 3px;
+  padding-left: -1px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.selected {
+  border-radius: 50%;
+  color: #fff;
+  background-color: #de6e45;
+  box-shadow: 0px 0px 0px 1px #de6e45;
+}
+
+.circled {
+  position: relative;
+  border-radius: 50%;
+}
+
+.circled-purple {
+  box-shadow: 0px 0px 0px 2px #ae5989;
+}
+
+.circled-orange {
+  box-shadow: 0px 0px 0px 2px #de6d46;
+}
+
+.badge {
+  position: absolute;
+  display: block;
+  top: -5px;
+  right: -5px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  line-height: 15px;
+  color: #fff;
+  font-size: 10px;
+}
+
+.badge-purple {
+  background-color: #ae5989;
+}
+
+.badge-orange {
+  background-color: #de6d46;
+}
+
+
+.other-month {
+  color: #ddd;
+}
+
+.footer {
+  border-top: 1px solid #ddd;
+  padding: 20px 20px;
+  font-size: 0.8em;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.round-button {
+  display: block;
+  width: 35px;
+  height: 35px;
+  border: 2px solid green;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+}
