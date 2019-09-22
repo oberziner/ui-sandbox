@@ -1,0 +1,18 @@
+body {
+  background-color: #c9f8fe;
+  margin: 0px;
+}
+
+.wrapper {
+  margin: 60px auto;
+  width: 1000px;
+  background-color: #fff;
+  display: flex;
+}
+
+.left-panel {
+  /* background-color: #898fff;     */
+  background-image: url('img/background.jpg');
+  background-size: cover;
+
+}
