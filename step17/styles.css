@@ -1,6 +1,5 @@
 body {
   background-color: #c9f8fe;
-  margin: 0px;
   font-family: Roboto, sans-serif;
   font-size: 16px;
 }
@@ -20,7 +19,7 @@ h1 {
   position: relative;
   color: #fff;
   width: 45%;
-  padding: 200px 0;
+  padding: 215px 0;
 }
 
 .left-panel::before {
@@ -34,19 +33,46 @@ h1 {
   filter: brightness(0.6);
 }
 
-.left-panel h1, h2, button {
-  display: block;
+.text-box {
   position: relative;
-  margin: 0 auto;
-  text-align: center;
+  margin-left: 115px;
 }
 
-.left-panel h1 {
-  font-size: 1.8em;
+.text-box__title {
+  margin: 0;
+  font-size: 1.9em;
 }
 
-.left-panel h2 {
-  font-size: 1.0em;
+.text-box__subtitle {
+  margin: 10px 0 20px 0;
+  font-weight: 500;
+  font-size: 0.95em;
+}
+
+.text-box__button::before {
+  content: '';
+  display: inline-block;
+  width: 24px; height: 24px;
+  margin-right: 10px;
+  vertical-align: middle ;
+  background-image: url('img/file.svg');
+}
+
+.text-box__button {
+  width: 140px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  background-color: #5ca893;
+  color: #fff;
+  font-size: 0.9em;
+  letter-spacing: -0.06em;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.text-box__button:hover {
+  opacity: 1;
 }
 
 .right-panel {
@@ -56,13 +82,14 @@ h1 {
 }
 
 .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-weight: 500;
 }
 
 .title::after {
   content: '';
-  float: right;
-  display: inline-block;
   width: 25px; height: 25px;
   background-image: url('img/menu.svg');
 }
@@ -88,14 +115,20 @@ h1 {
   display: inline-block;
   margin-right: 12px;
   color: #bbb;
+  cursor: pointer;
 }
 
-.carousel__item--active {
+.carousel__item:hover {
+  color: #333;
+}
+
+.carousel__item--active,
+.carousel__item--active:hover {
   color: #000;
 }
 
 .article-list__item + .article-list__item {
-  margin-top: 35px;
+  margin-top: 40px;
 }
 
 .article-list__item {
@@ -120,11 +153,11 @@ h1 {
 
 .date-column {
   flex-basis: 80px;
+  flex-shrink: 0;
   display: flex;
   flex-direction: column ;
   flex-wrap: wrap;
   height: 2.5em;
-  flex-shrink: 0;
 }    
 
 .date-column__day {
